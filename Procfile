@@ -1,1 +1,1 @@
-web: python slack_bot.py
+web: python3 slack_bot.py
