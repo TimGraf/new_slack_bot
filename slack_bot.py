@@ -21,9 +21,9 @@ def handle_command(command, channel):
         are valid commands. If so, then acts on the commands. If not,
         returns back what it needs for clarification.
     """
-    response = "Dance \n " + GIF_URL + " \n Dance"
+    response = "I don't know how to do that!"
     if command.startswith(EXAMPLE_COMMAND):
-        response = "Sure...write some more code then I can do that!"
+        response = "Dance \n " + GIF_URL + " \n Dance"
     slack_client.api_call("chat.postMessage", channel=channel,
                           text=response, as_user=True)
 
